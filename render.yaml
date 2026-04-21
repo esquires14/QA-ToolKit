@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: qa-toolkit-backend
+    runtime: java
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -Dspring.profiles.active=prod -jar target/qa-toolkit-1.0.0.jar"
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: APP_BASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
