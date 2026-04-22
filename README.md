@@ -1,6 +1,6 @@
 # QA Toolkit — Spring Boot Backend
 
-**Author:** Emily Squires · QA Lead  
+**Author:** Emily Squires
 **Stack:** Java 17 · Spring Boot 3.2 · JPA · H2 (dev) / PostgreSQL (prod) · iText7
 
 ---
